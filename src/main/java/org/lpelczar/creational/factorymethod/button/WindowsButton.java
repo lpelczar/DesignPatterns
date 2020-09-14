@@ -1,4 +1,4 @@
-package org.lpelczar.creational.factorymethod;
+package org.lpelczar.creational.factorymethod.button;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -26,20 +26,18 @@ public class WindowsButton implements Button {
     panel.setLayout(new FlowLayout(FlowLayout.CENTER));
     frame.getContentPane().add(panel);
     panel.add(label);
-    onClick();
-    panel.add(button);
 
     frame.setSize(320, 200);
     frame.setVisible(true);
-    onClick();
+
+    button = new JButton("Exit");
+    button.addActionListener(e -> onClick());
+    panel.add(button);
   }
 
   @Override
   public void onClick() {
-    button = new JButton("Exit");
-    button.addActionListener(e -> {
-      frame.setVisible(false);
-      System.exit(0);
-    });
+    frame.setVisible(false);
+    System.exit(0);
   }
 }

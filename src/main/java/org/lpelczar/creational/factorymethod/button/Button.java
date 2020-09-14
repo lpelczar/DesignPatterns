@@ -1,4 +1,4 @@
-package org.lpelczar.creational.factorymethod;
+package org.lpelczar.creational.factorymethod.button;
 
 public interface Button {
 
