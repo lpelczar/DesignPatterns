@@ -1,6 +1,6 @@
-package org.lpelczar.creational.singleton.singlethread;
+package org.lpelczar.creational.singleton.naive;
 
-public class Demo {
+public class DemoSingleThread {
   public static void main(String[] args) {
     System.out.println(
         "If you see the same value, then singleton was reused (yay!)"

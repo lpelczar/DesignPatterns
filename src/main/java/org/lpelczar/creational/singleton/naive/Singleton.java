@@ -1,4 +1,4 @@
-package org.lpelczar.creational.singleton.singlethread;
+package org.lpelczar.creational.singleton.naive;
 
 public final class Singleton {
   private static Singleton instance;
